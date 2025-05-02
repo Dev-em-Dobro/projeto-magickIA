@@ -1,0 +1,152 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    background-color: #0E0027;
+    padding: 10px;
+    margin-bottom: 60px;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.container .produtos{
+    color: #6528D3;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 32px;
+    line-height: 32px;
+    letter-spacing: 2px;
+}
+
+.container .filtros{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.container .filtros .btn-filtrar{
+    border: none;
+    background-color: #6528D3;
+    color: #EDEDED;
+    padding: 16px 32px;
+    border-radius: 10px;
+    font-weight: 500;
+    align-self: end;
+    width: 177px;
+    height: 52px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+.container .filtros .btn-filtrar:hover{
+    background-color: #33008F;
+}
+
+.container .categorias-cartas, .container .preco-cartas{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.container .categorias-cartas label, .container .preco-cartas label{
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #6528D3;
+}
+
+.container .categorias-cartas select, .container .preco-cartas input{
+    padding: 16px 13px;
+    border-radius: 2px;
+    border: 2px solid #6528D3;
+    background-color: #F2EEFA;
+    color: #130234;
+    height: 52px;
+}
+
+.container .categorias-cartas select:focus, .container .preco-cartas input:focus-visible{
+    outline: none;
+    border: 2px solid #6528D3;
+}
+
+.container .cartas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.container .cartas .carta{
+    max-width: 365px;
+    background-color: #EDEDED;
+    color: #0E0027;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+.container .cartas .carta img{
+    width: 100%;
+    padding: 20px;
+}
+
+.container .cartas .carta .informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container .cartas .carta .informacoes .nome-personagem{
+    font-size: 24px;
+    font-weight: 700;
+    color: #111111;
+}
+
+.container .cartas .carta .informacoes .categoria {
+    color: #7E7E7E;
+    font-weight: 700;
+}
+
+.container .cartas .carta .informacoes .preco{
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #4D8E5C;
+}
+.container .cartas .carta .informacoes .btn-comprar{
+    color: #EDEDED;
+    background-color: #6528D3;
+    padding: 16px;
+    border: none;
+    border-radius: 4px;
+    letter-spacing: 2px;
+}
+.container .cartas .carta .informacoes .btn-comprar:hover{
+    background-color: #33008F;
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    background-color: #6528D3;
+    color: #EDEDED;
+    padding: 20px;  
+    margin-top: 60px;
+}
+
+.esconder{
+    display: none;
+}
+
+.mostrar{
+    display: block;
+}
