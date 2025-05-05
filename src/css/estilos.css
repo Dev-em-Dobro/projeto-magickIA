@@ -49,6 +49,11 @@ body{
     background-color: #33008F;
 }
 
+.container .categorias-cartas .categoria{
+    background: url(../imagens/seta-para-baixo.png) 97% center no-repeat;
+    appearance: none;
+}
+
 .container .categorias-cartas, .container .preco-cartas{
     display: flex;
     flex-direction: column;
