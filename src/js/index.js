@@ -7,6 +7,8 @@ function filtrarCartas() {
     const categoria = document.querySelector('#categoria').value;
     const precoMaximo = document.querySelector('#preco').value;
 
+    if(precoMaximo <= 0) return
+    
     cartas.forEach(carta => {
         if (deveMostrarCarta(carta, categoria, precoMaximo)) {
             mostrarCarta(carta);
